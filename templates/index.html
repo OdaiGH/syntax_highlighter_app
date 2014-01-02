@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Paste your code</h1>
+    <form method="POST" action="/add">
+    {{form.title(placeholder="#Title")}}<br /><br />
+    {{form.PL}}<br /><br />
+    {{form.code(placeholder="#Your code",cols="100", rows="25")}}<br /><br />
+    <input type="submit" value="Submit" />
+    </form>
+{% endblock %}
